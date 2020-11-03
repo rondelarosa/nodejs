@@ -18,3 +18,7 @@ Which code should come instead of the ??? placeholder to start the server-side S
 socket.io
     - bidirectional communication
     - has two points: client side library runs on browser and server side library runs on nodejs
+
+
+mongoose
+    - gives structure to easily interact with database

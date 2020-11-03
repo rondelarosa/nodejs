@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const app = express();
 
@@ -29,8 +30,15 @@ app.post('/messages', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-    console.log('Connected', { socket });
+    console.log('Connected');
 });
+
+// const dburl = "";
+
+// mongoose.connect(dburl, { useNewUrlParser: true }, (err) => {
+//     console.log('mongo db connection', err);
+// });
+
 // instead of just app.listen we can no longer serve express by the backend any longer
 // to run socket.io and express change to http.listen
 const server = http.listen(3000, () => {
