@@ -1,0 +1,11 @@
+{
+  "name": "global-object",
+  "version": "1.0.0",
+  "description": "studying the global object",
+  "main": "process.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
